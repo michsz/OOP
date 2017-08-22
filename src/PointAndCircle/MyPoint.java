@@ -50,7 +50,26 @@ public class MyPoint {
     }
 
     public double distance(int x, int y){
+        double a = Math.pow(_x - x, 2);
+        double b = Math.pow(_y - y, 2);
+        double c = Math.sqrt(a+b);
+        return c;
+    }
 
+    public double distance(MyPoint point){
+        double x = point._x;
+        double y = point._y;
+        double a = Math.pow(_x - x, 2);
+        double b = Math.pow(_y - y, 2);
+        double c = Math.sqrt(a+b);
+        return c;
+    }
+
+    public double distance(){
+        double a = Math.pow(_x - 0, 2);
+        double b = Math.pow(_y - 0, 2);
+        double c = Math.sqrt(a+b);
+        return c;
     }
 
 
